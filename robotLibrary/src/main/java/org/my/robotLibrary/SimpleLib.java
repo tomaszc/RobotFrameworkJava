@@ -24,7 +24,7 @@ public class SimpleLib extends AnnotationLibrary
      * was used or not.
      * </p>
      */
-    public static final String ROBOT_LIBRARY_SCOPE = "GLOBAL";
+    public static final String ROBOT_LIBRARY_SCOPE = "TEST SUITE";
 
     /**
      * Injected class - must be marked by {@link RobotKeywords} and be registered in extended {@link AnnotationLibrary}.

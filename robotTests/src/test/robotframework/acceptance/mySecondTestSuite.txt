@@ -1,9 +1,6 @@
 *** Settings ***
 Library  org.my.robotLibrary.SimpleLib
 
-*** Variables ***
-${SOME_STRING}  "TestStringFromVariable"
-
 *** Test Cases ***
 Default print-line execution
    print to sysout
