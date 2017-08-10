@@ -1,5 +1,5 @@
 *** Settings ***
-Library  org.my.robotLibrary.SimpleLib
+Library  org.my.robotLibrary.SimpleLib  "constructor_argument"
 
 *** Test Cases ***
 Default print-line execution

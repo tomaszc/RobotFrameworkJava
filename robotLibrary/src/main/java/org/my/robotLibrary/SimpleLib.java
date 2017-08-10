@@ -34,11 +34,27 @@ public class SimpleLib extends AnnotationLibrary
     protected SimpleKeywords keywords;
 
     /**
-     * Register autowireable classes
+     * Register autowireable classes.
      */
     public SimpleLib()
     {
         this.addKeywordPattern("org/my/robotLibrary/keywords/**/*.class");
         this.createKeywordFactory();
+    }
+
+    /**
+     * Register autowireable classes.
+     * Overriden to show how library constructor parameters can be invoked by:
+     * <pre><code>*** Settings ***
+Library  org.my.robotLibrary.SimpleLib  "constructor_argument"
+     </code></pre>
+     */
+    public SimpleLib(String welcomeMessage)
+    {
+        this.addKeywordPattern("org/my/robotLibrary/keywords/**/*.class");
+        this.createKeywordFactory();
+
+        //TODO uncomment if you don't believe me that this constructor is really executed
+        //throw new RuntimeException("WORKS: "+welcomeMessage);
     }
 }
