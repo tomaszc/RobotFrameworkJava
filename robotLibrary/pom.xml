@@ -14,4 +14,13 @@
 
     <description>Simple Robot java library which can be used during robot test execution</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.github.tomakehurst</groupId>
+            <artifactId>wiremock</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+
+    </dependencies>
+
 </project>

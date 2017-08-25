@@ -12,7 +12,7 @@ public class SimpleLib extends AnnotationLibrary
 {
     /**
      * <p>
-     * SimpleLib life scope during tests execution - should it be instantiated.
+     * This is how to choose SimpleLib life scope during robot-tests execution.
      * <ul>
      * <li>"TEST CASE" - per test</li>
      * <li>"TEST SUITE" - per suite</li>

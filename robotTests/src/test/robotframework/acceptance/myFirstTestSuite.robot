@@ -1,5 +1,6 @@
 *** Settings ***
-Library  org.my.robotLibrary.SimpleLib
+#We don't have to provide full class-name org.my.robotLibrary.SimpleLib thanks to having SimpleLib in empty package
+Library  SimpleLib
 
 *** Variables ***
 ${SOME_STRING}  "TestStringFromVariable"
